@@ -31,20 +31,28 @@ let x = 0;
 start.addEventListener("click",function()
 {
     
-    if(x === 0)x= setInterval(fun,10);
-   
+    if(x === 0)
+        {
+            x= setInterval(fun,10);
+
+        }    
+   else return;
 })
 stop.addEventListener("click",function()
 {
+    
     clearInterval(x);
     x = 0;
 })
 reset.addEventListener("click",function()
 {
-    x = 0;
-    s = 0,m=0,h=0;
-    hh.innerHTML = "00"
-    ss.innerHTML = "00"
-    mm.innerHTML = "00"
+    
+
+       
+        s = 0,m=0,h=0;
+        hh.innerHTML = "00"
+        ss.innerHTML = "00"
+        mm.innerHTML = "00"
+    
 })
 
